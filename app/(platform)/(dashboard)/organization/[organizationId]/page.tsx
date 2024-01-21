@@ -1,12 +1,5 @@
-import { OrganizationSwitcher } from "@clerk/nextjs";
-import React from "react";
-
 const Page = () => {
-  return (
-    <div>
-      <OrganizationSwitcher hidePersonal />
-    </div>
-  );
+  return <div>Organization id page</div>;
 };
 
 export default Page;

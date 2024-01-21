@@ -1,13 +1,17 @@
-import Logo from "@/components/Logo";
-import { Button } from "@/components/ui/button";
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs";
 import { Plus } from "lucide-react";
+
+import Logo from "@/components/Logo";
+import { Button } from "@/components/ui/button";
+
+import SideBarMobile from "./SideBarMobile";
 
 const Navbar = () => {
   return (
     <header className="fixed top-0 w-full h-14 px-4 z-50 bg-white shadow-sm rounded-b flex items-center">
       <div className="flex items-center max-w-screen-2xl gap-3 w-full justify-between">
         <div className="flex items-center justify-between gap-4">
+          <SideBarMobile />
           <div className="hidden md:flex justify-center items-center">
             <Logo />
           </div>
